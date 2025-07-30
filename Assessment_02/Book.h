@@ -18,6 +18,6 @@ public:
 
 	string displayBook();
 
-	void borrowBook();
-	void returnBook();
+	// void borrowBook();
+	// void returnBook();
 };
