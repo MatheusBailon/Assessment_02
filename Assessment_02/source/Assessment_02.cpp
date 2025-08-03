@@ -45,6 +45,7 @@ Book* searchBook(string isbn){
             return &Library[i];
         }
     }
+    cout << "The Book was not found" << endl;
     return nullptr;
 }
 
@@ -55,10 +56,8 @@ void returnBook(){
     cin >> isbn;
     Book* foundBook = searchBook(isbn);
 
-    if(foundBook == nullptr){
-        cout << "The Book was not found!! "<< endl;
+    if(foundBook == nullptr)
         return;
-    }
     
     cout << foundBook->returnBook() << endl;
 }
@@ -71,13 +70,10 @@ void reserveBook(){
     cin >> isbn;
     Book* foundBook = searchBook(isbn);
 
-    if(foundBook != nullptr)
-    {
-        cout << foundBook->borrowBook() << endl;
+    if(foundBook == nullptr)
         return;
-    }
-
-    cout << "No book were found" << endl;
+    
+    cout << foundBook->borrowBook() << endl;
 }
 
 int main()
@@ -91,13 +87,13 @@ int main()
         clearConsole();
         switch(option){
             case 1:
-                ListBook();
+                listBook();
                 break;
             case 2:
-                ReserveBook();
+                reserveBook();
                 break;
             case 3:
-                ReturnBook();
+                returnBook();
                 break;
             default:
                 break;

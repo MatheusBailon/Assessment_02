@@ -26,7 +26,7 @@ string Book::displayBook() {
 string Book::borrowBook(){
 	if(Availability){
 		this->Availability = false;
-		return "The Book: " + this->Title + " successfully reserved!! (- ‿◦ )";
+		return "The Book: " + this->Title + ", successfully reserved!! (- ‿◦ )";
 	}
 
 	return "Book not available, please try another one (ノ-_-)ノ ミ ┴┴";
@@ -34,8 +34,8 @@ string Book::borrowBook(){
 
 string Book::returnBook(){
 	if(Availability)
-		return "Book is already available (ಠ_ಠ)";
+		return "Invalid option, book is already available (ಠ_ಠ)";
 
 	Availability = true;
-	return "The Book: "+ this->Title + " returned successfully! ヽ(•‿•)ノ";
+	return "The Book: "+ this->Title + ", returned successfully! ヽ(•‿•)ノ";
 }
