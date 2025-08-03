@@ -14,10 +14,11 @@ public:
 	void setBookDetails(
 		string title,
 		string author,
-		string isbn);
+		string isbn,
+		bool availability);
 
 	string displayBook();
 
-	void borrowBook();
-	void returnBook();
+	string borrowBook();
+	string returnBook();
 };
