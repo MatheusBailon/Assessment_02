@@ -91,13 +91,13 @@ int main()
         clearConsole();
         switch(option){
             case 1:
-                ListBook();
+                listBook();
                 break;
             case 2:
-                ReserveBook();
+                reserveBook();
                 break;
             case 3:
-                ReturnBook();
+                returnBook();
                 break;
             default:
                 break;
