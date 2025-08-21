@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/workspaces"
+                "/workspaces",
+                "${workspaceFolder}/out/build/PresetDefault/_deps/catch2-src/src"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
