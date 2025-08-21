@@ -1,6 +1,8 @@
 #pragma once
-using namespace std;
 #include <string>
+#include <ctime>
+
+using namespace std;
 
 class Book {
 
@@ -10,12 +12,14 @@ public:
 	string ISBN;
 	string Title;
 	bool Availability;
+	tm DateAdd;
 
 	void setBookDetails(
 		string title,
 		string author,
 		string isbn,
-		bool availability);
+		bool availability,
+		string dateAdd);
 
 	string displayBook();
 

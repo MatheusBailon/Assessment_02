@@ -13,7 +13,8 @@ vector<Book> createBooks(){
         "Harry Potter Filosofal Stone",
         "J. K. Rowling",
         "123456",
-        true
+        true,
+        "14/03/2003"
     );
 
     Book Farm;
@@ -21,7 +22,8 @@ vector<Book> createBooks(){
         "Animal Farm",
         "George Orwell",
         "111111",
-        false
+        false,
+        "24/11/2013"
     );
 
     Book Hobbit;
@@ -29,7 +31,8 @@ vector<Book> createBooks(){
         "The Hobbit",
         "J.R.R. Tolkien",
         "111119",
-        true
+        true,
+        "02/12/1995"
     );
 
     Book Frank;
@@ -37,7 +40,8 @@ vector<Book> createBooks(){
         "Frankenstein",
         "Mary Shelley",
         "111121",
-        true
+        true,
+        "01/01/2000"
     );
 
     Book Moby;
@@ -45,7 +49,8 @@ vector<Book> createBooks(){
         "Moby Dick",
         "Herman Melville",
         "111117",
-        false
+        false,
+        "05/02/2004"
     );
 
     return {
